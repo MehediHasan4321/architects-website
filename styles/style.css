@@ -275,6 +275,56 @@ header {
 
 /* sponspors section ends here */
 
+/* client fedback section start here */
+.clients-fedbacks-container{
+    margin-top: 100px;
+}
+ .fedback-title{
+    font-size: 60px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 70px;
+ }
+ .clients-fedbacks{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 25px;
+ }
+ .fedback{
+    width: 350px;
+    height: 200px;
+    padding: 15px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+ }
+ .fedback-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -20px;
+ }
+ .client-img{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+ .client-img img{
+    width: 80px;
+    height: 80px;
+    background-color: #FF900E;
+    border-radius: 40px;
+    object-fit: cover;
+ }
+ .client-info h4{
+    margin-top: 30px;
+ }
+ .client-info p{
+    margin-top: -17px;
+ }
+ .client-review i{
+    color: #FF900E;
+ }
+/* client fedback section ends here */
 
 /* main section styles ends here */
 
