@@ -265,7 +265,8 @@ transition: .5s;
     margin-top: -10px;
 }
 .sponspore-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     justify-content: space-between;
     align-items: center;
     gap: 100px;
@@ -428,7 +429,10 @@ transition: .5s;
         flex-direction: column;
         gap: 0;
     }
+
+    /* spoonsore sections */
     .sponspore-container{
+        display: flex;
         flex-direction: column;
         gap: 35px;
     }
@@ -506,5 +510,22 @@ transition: .5s;
     gap: 0;
     align-items: center;
     justify-items: center;
+   }
+   .sponspors-title{
+    margin-top: 35px;
+   }
+   .sponspore-container{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+   }
+   .clients-fedbacks{
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+   }
+   .footer-container{
+    width: auto;
+    margin-top: 35px;
    }
 }
