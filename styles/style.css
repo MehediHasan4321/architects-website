@@ -226,7 +226,7 @@ header {
     
 }
 .fact:hover.fact img{
-    transform: scale(1.5);
+    transform: scale(2);
 }
 .fact img{
     width: 45px;
@@ -348,12 +348,10 @@ transition: .5s;
 
 /* Responsive layout style  */
 
-/* Responsive for Mobile divices */
+/* Responsive for Small divices */
 
 @media screen and (max-width:576px) {
-    .hide{
-        display: none;
-    }
+    
     .container{
         width: 100%;
         
@@ -454,4 +452,59 @@ transition: .5s;
         width: auto;
         margin-top: 50px;
     }
+}
+
+/* Responsive for Medium divices */
+
+@media screen and (min-width:580px) and (max-width:992px) {
+    .hide{
+        display: none;
+    }
+    header{
+        height: 1050px;
+    }
+    .container{
+        width: 100%;
+    }
+   .nav-brand{
+    font-size: 25px;
+   }
+   .nav-links a{
+    margin-right: 25px;
+   }
+   .header-content h1{
+    font-size: 50px;
+   }
+   .feateres-container{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+   }
+   .feateres-content{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+
+   }
+   .services-container{
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   .service{
+    width: 90%;
+    margin: 20px auto;
+   }
+   .fact-title{
+    text-align: center;
+    margin: 0 auto;
+   }
+   .fact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 0;
+    align-items: center;
+    justify-items: center;
+   }
 }
