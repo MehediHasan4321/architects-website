@@ -223,11 +223,16 @@ header {
     border: 1px solid #FF900E;
     border-radius: 5px;
     margin-top: 70px;
+    
+}
+.fact:hover.fact img{
+    transform: scale(1.5);
 }
 .fact img{
     width: 45px;
     height: 45px;
     margin-top: 25px;
+transition: .5s;
 }
 .fact h1{
     color: #727272;
